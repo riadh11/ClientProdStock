@@ -8,6 +8,8 @@ import { ProduitMockService } from './produit/produit.mock.service';
 import { ContentComponent } from './content/content.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { AppRoutingModule } from './app.routig.module';
 
 @NgModule({
   declarations: [
@@ -15,10 +17,13 @@ import { SidebarComponent } from './sidebar/sidebar.component';
     ProduitComponent,
     ContentComponent,
     NavbarComponent,
-    SidebarComponent
+    SidebarComponent,
+    DashboardComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
+    
   ],
   providers: [ProduitMockService],
   bootstrap: [AppComponent]
