@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import {URL_API} from '../config/api.url.cong';
- import {Observable} from 'rxjs/Observable';
+import {Observable} from 'rxjs/Observable';
 import { Produit } from '../shared/produit';
 
 @Injectable({
@@ -11,7 +11,7 @@ export class ProduitServiceService {
  
 
   constructor( private http:HttpClient) { }
-  getProduits(): Observable<any>{
+  getProduits():Observable<any>{
     return this.http.get(URL_API.PRODUITS_url);
   }
    Addprod( p:Produit):Observable<any>{
