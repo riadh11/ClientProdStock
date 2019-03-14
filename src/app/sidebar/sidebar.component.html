@@ -1,10 +1,12 @@
 <nav class="hided-xs-down bg-faded sidebar">
     <ul class="nav nav-pills flex-column">
         <li class="nav-item">
-        <a class="nav-link" [routerLink]="[ '/dashboard']">Dashboard</a>
+        <a class="nav-link" [routerLink]="[{ outlets:{contentOutlet:'dashboard'}}]" 
+              routerLinkActive="active">Dashboard</a>
         </li>
         <li class="nav-item">
-         <a class="nav-link" routerLink="/produit">Produit</a>
+         <a class="nav-link" [routerLink]="[{ outlets:{contentOutlet:'produit'}}]" 
+              routerLinkActive="active">Produit</a>
 
         </li>
            <li class="nav-item">

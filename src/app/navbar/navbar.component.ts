@@ -19,4 +19,5 @@ showSideBarChange:EventEmitter<boolean> = new EventEmitter<boolean>();
     this.showSideBar =!this.showSideBar;
     this.showSideBarChange.emit(this.showSideBar);
   }
+  
 }
